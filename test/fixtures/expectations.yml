@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: 2015-05-22
+  content: MyString
+  result: MyString
+
+two:
+  date: 2015-05-22
+  content: MyString
+  result: MyString

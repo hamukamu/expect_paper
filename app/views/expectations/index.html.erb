@@ -1,0 +1,30 @@
+<h1>Listing expectations</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Content</th>
+    <th>Result</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @expectations.each do |expectation| %>
+  <tr>
+    <td><%= expectation.date %></td>
+    <td><%= expectation.content %></td>
+    <td><%= expectation.result %></td>
+    <td><%= link_to 'Show', expectation %></td>
+    <td><%= link_to 'Edit', edit_expectation_path(expectation) %></td>
+    <td><%= link_to 'Destroy', expectation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<!--     <td><%= link_to 'Update Page', expectation_path(expectation, result_param: 1), :method => :put %></td>
+    <td><%= link_to 'Update Page', expectation_path(expectation, result_param: 2), :method => :put %></td>
+    <td><%= link_to 'Update Page', expectation_path(expectation, result_param: 3), :method => :put %></td> -->
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Expectation', new_expectation_path %>
