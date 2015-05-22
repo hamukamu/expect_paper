@@ -61,8 +61,8 @@ class ExpectationsController < ApplicationController
 
     p params[:result_param]
     # p @expectation.result
-    p params[:expectation]
-    p params[:result]
+    # p params[:expectation]
+    # p params[:result]
     # unless params[:result_param].nil? then
     #   if params[:result_param] == 1 then
     #     @expectation.first.result = "○"
